@@ -375,6 +375,36 @@ public class MenuAdvanced extends Activity {
                     }
                 }).start();
 
+
+            }
+
+
+        });
+
+        bAHome.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent ShowPostItIntent = new Intent(MenuAdvanced.this, Home.class);
+                startActivity(ShowPostItIntent);
+
+                finish();
+
+            }
+
+
+        });
+
+        bANotes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent ShowPostItIntent = new Intent(MenuAdvanced.this, PostIts.class);
+                startActivity(ShowPostItIntent);
+                finish();
+
             }
 
 

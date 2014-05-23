@@ -114,6 +114,7 @@ public class Home extends Activity {
         checkPostIts();
 
 
+
     }
 
     public void checkPostIts() {
@@ -381,6 +382,20 @@ public class Home extends Activity {
 
 
         });
+
+        bQNotes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent ShowPostItIntent = new Intent(Home.this, PostIts.class);
+                startActivity(ShowPostItIntent);
+
+            }
+
+
+        });
+
 
 
         bDeployQuickMenu.setOnClickListener(new View.OnClickListener() {

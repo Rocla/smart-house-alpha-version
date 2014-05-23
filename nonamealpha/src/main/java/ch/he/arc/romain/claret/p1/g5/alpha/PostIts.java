@@ -24,14 +24,24 @@ public class PostIts extends Activity {
     //Quick Menus items
     ImageButton bQHome, bQUsers, bQDevices, bQNotes, bQSettings;
 
+    int id, status;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_its);
 
+        //id = getIntent().getExtras().getInt("id");
+        //status = getIntent().getExtras().getInt("status");
+
         setMenus();
 
+        setList();
 
+
+    }
+
+    public void setList(){
         // Get ListView object from xml
         PostItList = (ListView) findViewById(R.id.PostItList);
 
@@ -73,9 +83,13 @@ public class PostIts extends Activity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
+                Intent ShowPostItIntent = new Intent(PostIts.this, ShowPostit.class);
+                ShowPostItIntent.putExtra("id", id);
+                startActivity(ShowPostItIntent);
 
 
-                /*
+
+
                 // ListView Clicked item index
                 int itemPosition = position;
 
@@ -87,12 +101,13 @@ public class PostIts extends Activity {
                 Toast.makeText(getApplicationContext(),
                         "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
                         .show();
-                        */
+
+
+
 
             }
 
         });
-
     }
 
     public void setMenus() {
