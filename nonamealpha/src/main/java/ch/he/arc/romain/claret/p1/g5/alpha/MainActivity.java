@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent testIntent = new Intent (MainActivity.this, Home.class);
+        Intent testIntent = new Intent (MainActivity.this, PostIts.class);
         startActivity(testIntent);
 
         setContentView(R.layout.activity_main);

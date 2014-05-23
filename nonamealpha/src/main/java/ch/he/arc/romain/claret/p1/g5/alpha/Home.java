@@ -44,7 +44,7 @@ public class Home extends Activity {
     boolean postIt2 = true;
     boolean postIt3 = true;
 
-    int numberMorePostIts = 1;
+    int numberMorePostIts = 0;
 
 
 
@@ -53,19 +53,6 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home);
-
-        Bundle bundle = getIntent().getExtras();
-
-        //Boolean yourBool = getIntent().getExtras().getBoolean("postIt1");
-
-        /*
-        if(bundle.getBoolean("postIt1")== false)
-        {
-            Toast.makeText(Home.this,
-                    "YOUR ARE AT HOME!", Toast.LENGTH_SHORT).show();
-        }
-        */
-
 
         setMenus();
 
@@ -334,20 +321,11 @@ public class Home extends Activity {
                     tPostItMessage3.setVisibility(View.INVISIBLE);
                     postIt3 = false;
 
-                /*
-                    Intent i = new Intent(Home.this, Home.class);
-                    i.putExtra("postIt1", true);
-                    i.putExtra("postIt2", true);
-                    i.putExtra("postIt3", false);
-                //startIn();
-
-*/
             }
         });
 
 
     }
-
 
     public void setMenus() {
 
@@ -358,8 +336,15 @@ public class Home extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent testIntent = new Intent(Home.this, MenuAdvanced.class);
-                startActivity(testIntent);
+                Intent advancedMenuIntent = new Intent(Home.this, MenuAdvanced.class);
+
+                advancedMenuIntent.putExtra("qMenu1", 1);
+                advancedMenuIntent.putExtra("qMenu2", 2);
+                advancedMenuIntent.putExtra("qMenu3", 3);
+                advancedMenuIntent.putExtra("qMenu4", 4);
+                advancedMenuIntent.putExtra("qMenu5", 5);
+
+                startActivity(advancedMenuIntent);
 
 
             }

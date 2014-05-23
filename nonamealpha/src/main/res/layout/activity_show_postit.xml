@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ch.he.arc.romain.claret.p1.g5.alpha.ShowPostit">
+
+    <TextView
+        android:id="@+id/tPostItName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Romain"
+
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21st May 2014 at 00:00"
+        android:id="@+id/tPostItDateTime"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tPostItName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nOh my beloved belly button.\n
+The squidgy ring in my midriff mutton.\n
+Your mystery is such tricky stuff:\n
+Why are you so full of fluff?"
+        android:id="@+id/tPostIt"
+        android:textSize="20sp"
+        android:layout_below="@+id/tPostItDateTime"
+        android:layout_alignRight="@+id/tPostItDateTime"
+        android:layout_alignEnd="@+id/tPostItDateTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bDeployCompleteMenu" />
+
+    <ImageButton
+        android:id="@+id/idbDeployQuickMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bSettings"
+        android:clickable="true"
+        android:minWidth="40dp"
+        android:src="@drawable/abc_ic_ab_back_holo_light_open"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/idbHideQuickMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bSettings"
+        android:clickable="true"
+        android:minWidth="40dp"
+        android:src="@drawable/abc_ic_ab_back_holo_light_close"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bDeployCompleteMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/idbHideQuickMenu"
+        android:background="@drawable/abc_ic_commit_search_api_holo_light"
+        android:minHeight="50dp"
+        android:minWidth="40dp" />
+
+    <ImageButton
+        android:id="@+id/bHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/logo_fist"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bHome"
+        android:background="@drawable/people"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bUsers"
+        android:background="@drawable/device_manager"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bDevices"
+        android:background="@drawable/stock_notes"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bNotes"
+        android:background="@drawable/system_config_services"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Unread"
+        android:id="@+id/bUnread"
+        android:layout_alignBottom="@+id/bDeployCompleteMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/bDelete"
+        android:layout_alignTop="@+id/bUnread"
+        android:layout_toRightOf="@+id/bUnread" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/bReturn"
+        android:layout_above="@+id/bNotes"
+        android:layout_toLeftOf="@+id/idbDeployQuickMenu" />
+
+</RelativeLayout>

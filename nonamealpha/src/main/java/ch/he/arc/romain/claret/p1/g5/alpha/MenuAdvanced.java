@@ -33,6 +33,14 @@ public class MenuAdvanced extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_advanced);
 
+        //Bundle qMenuSetup = getIntent().getExtras();
+
+        int qMenu1 = getIntent().getExtras().getInt("qMenu1");
+        int qMenu2 = getIntent().getExtras().getInt("qMenu2");
+        int qMenu3 = getIntent().getExtras().getInt("qMenu3");
+        int qMenu4 = getIntent().getExtras().getInt("qMenu4");
+        int qMenu5 = getIntent().getExtras().getInt("qMenu5");
+
         setSwitch();
         completeMenu();
 

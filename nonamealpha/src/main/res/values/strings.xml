@@ -12,5 +12,7 @@
     <string name="title_section3">Section 3</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_menu_advanced">MenuAdvanced</string>
+    <string name="title_activity_post_its">PostIts</string>
+    <string name="title_activity_show_postit">ShowPostit</string>
 
 </resources>
