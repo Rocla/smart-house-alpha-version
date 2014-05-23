@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FI5T Alpha</string>
+    <string name="hello_world">Hello World!!!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_page">Main Page</string>
+    <string name="login_message">Login Screen</string>
+    <string name="title_activity_main_page_user">Main Page User</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_menu_advanced">MenuAdvanced</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ch.he.arc.romain.claret.p1.g5.alpha.MainPage"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/idbDeployQuickMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bSettings"
+        android:clickable="true"
+        android:minHeight="25dp"
+        android:minWidth="40dp"
+        android:src="@drawable/abc_ic_ab_back_holo_light_open"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/idbHideQuickMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bSettings"
+        android:clickable="true"
+        android:minHeight="25dp"
+        android:minWidth="40dp"
+        android:src="@drawable/abc_ic_ab_back_holo_light_close"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bDeployCompleteMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idbDeployQuickMenu"
+        android:layout_alignLeft="@+id/idbDeployQuickMenu"
+        android:layout_alignStart="@+id/idbDeployQuickMenu"
+        android:layout_toRightOf="@+id/idbDeployQuickMenu"
+        android:background="@drawable/abc_ic_commit_search_api_holo_light"
+        android:minHeight="50dp"
+        android:minWidth="40dp" />
+
+    <ImageButton
+        android:id="@+id/bHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/logo_fist"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bHome"
+        android:background="@drawable/people"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bUsers"
+        android:background="@drawable/device_manager"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bDevices"
+        android:background="@drawable/stock_notes"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/bSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bNotes"
+        android:background="@drawable/system_config_services"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bDeployCompleteMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bDeployCompleteMenu"
+        android:gravity="center"
+        android:text="FI5T Home Page"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/iPostIt1"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/home_post_it" />
+
+    <ImageView
+        android:id="@+id/iPostIt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iPostIt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home_post_it" />
+
+    <ImageView
+        android:id="@+id/iPostIt3"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iPostIt2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home_post_it" />
+
+    <Button
+        android:id="@+id/bClosePostIt1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iPostIt1"
+
+        android:layout_alignRight="@+id/iPostIt1"
+        android:layout_alignTop="@+id/iPostIt1"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/bClosePostIt2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iPostIt2"
+
+        android:layout_alignRight="@+id/iPostIt2"
+        android:layout_alignTop="@+id/iPostIt2"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/bClosePostIt3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iPostIt3"
+
+        android:layout_alignRight="@+id/iPostIt3"
+        android:layout_alignTop="@+id/iPostIt3"
+        android:text="X" />
+
+
+    <TextView
+        android:id="@+id/tPostItDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignLeft="@+id/tPostItMessage1"
+        android:layout_alignStart="@+id/tPostItMessage1"
+        android:layout_alignBottom="@+id/tPostItTime1"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_toLeftOf="@+id/iOpenCloseMainDoor" />
+
+    <TextView
+        android:id="@+id/tPostItTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMessage"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tPostItMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post It Message 1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignLeft="@+id/tNumberMorePostIts"
+        android:layout_alignStart="@+id/tNumberMorePostIts"
+        android:layout_above="@+id/iPostIt2"
+        android:layout_alignRight="@+id/bSettings"
+        android:layout_alignEnd="@+id/bSettings" />
+
+    <TextView
+        android:id="@+id/tPostItDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPostItMessage1"
+        android:layout_alignStart="@+id/tPostItMessage1"
+        android:layout_alignTop="@+id/iPostIt2"
+        android:text="Yesterday"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_above="@+id/tPostItMessage2"
+        android:layout_alignRight="@+id/tPostItDate1"
+        android:layout_alignEnd="@+id/tPostItDate1" />
+
+    <TextView
+        android:id="@+id/tPostItMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPostItDate2"
+        android:layout_alignStart="@+id/tPostItDate2"
+        android:text="Post It Message 2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/iPostIt2"
+        android:layout_alignRight="@+id/bSettings"
+        android:layout_alignEnd="@+id/bSettings" />
+
+    <TextView
+        android:id="@+id/tPostItMessage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iPostIt3"
+        android:layout_alignLeft="@+id/tPostItMessage2"
+        android:layout_alignStart="@+id/tPostItMessage2"
+        android:text="Post It Message 3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignRight="@+id/tStringMorePostIts"
+        android:layout_alignEnd="@+id/tStringMorePostIts" />
+
+    <TextView
+        android:id="@+id/tPostItDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPostItMessage3"
+        android:layout_alignStart="@+id/tPostItMessage3"
+        android:layout_alignTop="@+id/iPostIt3"
+        android:text="The Day Before"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignRight="@+id/tPostItDate2"
+        android:layout_alignEnd="@+id/tPostItDate2"
+        android:gravity="bottom"
+        android:layout_alignBottom="@+id/tPostItTime3" />
+
+    <TextView
+        android:id="@+id/tPostItTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iPostIt2"
+        android:layout_alignLeft="@+id/tPostItTime3"
+        android:layout_alignStart="@+id/tPostItTime3"
+        android:layout_alignTop="@+id/iPostIt2"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tPostItTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iPostIt3"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tNumberMorePostIts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bHome"
+        android:text="3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/tStringMorePostIts"
+        android:layout_toLeftOf="@+id/tStringMorePostIts"
+        android:layout_below="@+id/tPostItMessage3" />
+
+    <TextView
+        android:id="@+id/tStringMorePostIts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post-Its are waiting"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/iPostIt3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bOpenCloseMainDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPostItMessage3"
+        android:layout_alignStart="@+id/tPostItMessage3"
+        android:layout_centerVertical="true"
+        android:text="Open main Door" />
+
+    <ImageView
+        android:id="@+id/iOpenCloseMainDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bOpenCloseMainDoor"
+        android:layout_alignLeft="@+id/bNotes"
+        android:layout_alignStart="@+id/bNotes"
+        android:layout_alignTop="@+id/bOpenCloseMainDoor"
+        android:src="@drawable/opendoor" />
+
+    <Button
+        android:id="@+id/bAllDoors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bOpenCloseMainDoor"
+        android:layout_alignRight="@+id/iOpenCloseMainDoor"
+        android:layout_alignStart="@+id/bOpenCloseMainDoor"
+        android:layout_below="@+id/bOpenCloseMainDoor"
+        android:text="All Doors" />
+
+    <Button
+        android:id="@+id/bAllIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bAllDoors"
+        android:layout_alignStart="@+id/bAllDoors"
+        android:layout_below="@+id/bAllDoors"
+        android:layout_alignRight="@+id/bAllDoors"
+        android:text="All I/O" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Romain"
+        android:id="@+id/tPostItFrom1"
+        android:layout_above="@+id/tPostItMessage1"
+        android:layout_alignRight="@+id/iOpenCloseMainDoor"
+        android:layout_alignEnd="@+id/iOpenCloseMainDoor"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_toRightOf="@+id/tPostItDate1"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bastien"
+        android:id="@+id/tPostItFrom2"
+        android:layout_alignTop="@+id/iPostIt2"
+        android:layout_alignRight="@+id/tPostItFrom1"
+        android:layout_alignEnd="@+id/tPostItFrom1"
+        android:layout_alignBottom="@+id/tPostItDate2"
+        android:layout_toRightOf="@+id/tPostItDate2"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Remy"
+        android:id="@+id/tPostItFrom3"
+        android:layout_alignRight="@+id/tPostItFrom2"
+        android:layout_alignEnd="@+id/tPostItFrom2"
+        android:layout_alignTop="@+id/iPostIt3"
+        android:layout_toRightOf="@+id/tPostItDate3"
+        android:gravity="right"
+        android:layout_above="@+id/tPostItMessage3" />
+
+</RelativeLayout>
